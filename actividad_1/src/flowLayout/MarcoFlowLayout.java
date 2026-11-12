@@ -1,0 +1,53 @@
+package flowLayout;
+
+import java.awt.FlowLayout;
+import java.awt.Container;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+
+public class MarcoFlowLayout extends JFrame {
+    private final JButton botonIzquierda;
+    private final JButton botonCentro;
+    private final JButton botonDerecha;
+    private final FlowLayout esquema;
+    private final Container contenedor;
+
+    public MarcoFlowLayout() {
+        super("FlowLayout - Morani Acuña, Leandro | Riega Alva, Yuri | Suares Ponce, Carlos | Vargas Miranda, Sebastian");
+        esquema = new FlowLayout();
+        contenedor = getContentPane();
+        setLayout(esquema);
+
+        botonIzquierda = new JButton("Izquierda");
+        add(botonIzquierda);
+        botonIzquierda.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evento) {
+                esquema.setAlignment(FlowLayout.LEFT);
+                esquema.layoutContainer(contenedor);
+            }
+        });
+
+        botonCentro = new JButton("Centro");
+        add(botonCentro);
+        botonCentro.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evento) {
+                esquema.setAlignment(FlowLayout.CENTER);
+                esquema.layoutContainer(contenedor);
+            }
+        });
+
+        botonDerecha = new JButton("Derecha");
+        add(botonDerecha);
+        botonDerecha.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evento) {
+                esquema.setAlignment(FlowLayout.RIGHT);
+                esquema.layoutContainer(contenedor);
+            }
+        });
+    }
+}

@@ -33,7 +33,7 @@ LP3_Fase3/
 - **Ejercicio 2 (`Sesion9/ejercicio_2/src/`)**: Aplicación de compra de pasajes terrestres implementada bajo el patrón **Modelo-Vista-Controlador (MVC)**:
   - `Pasaje.java` (Modelo): Encapsula los datos del pasajero y reglas de validación.
   - `VistaCompraPasaje.java` (Vista): Interfaz gráfica Swing para el registro de la compra.
-  - `ControladorPasaje.java` (Controlador): Gestión de eventos y comunicación entre vista y modelo.
+  - `ControladorPasaje.java` (Controlador): Gestión de eventos y comunicación entre vista y modelo.](https://github.com/ZyrowsXs/LP3_Fase3)
   - `App.java`: Punto de entrada de la aplicación.
 
 ## Requisitos

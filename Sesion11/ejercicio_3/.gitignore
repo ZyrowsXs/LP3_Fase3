@@ -1,0 +1,20 @@
+# Compiled classes and dependencies
+out/
+lib/
+*.class
+*.jar
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# macOS metadata & copies
+._*
+.DS_Store
+.AppleDouble
+.LSOverride
+*.app/
+.Spotlight-V100
+.Trashes
+.fseventsd
